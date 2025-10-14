@@ -974,21 +974,6 @@ Verifica que `tsconfig.json` tiene configurado el alias `@`:
 
 ---
 
-### **¿Necesitas más ayuda?**
-
-Si ninguna de estas soluciones funciona:
-
-1. **Revisa los logs del servidor** en la terminal donde corre `npm run dev`
-2. **Abre la consola del navegador** (F12) y busca errores
-3. **Verifica el archivo `AUDITORIA_Y_REFACTORIZACION.md`** para más detalles técnicos
-4. **Crea un issue** en el repositorio con:
-   - Descripción del problema
-   - Pasos para reproducirlo
-   - Screenshots de errores
-   - Versión de Node.js (`node --version`)
-
----
-
 ## 📄 Licencia
 
 Este proyecto está bajo la **Licencia MIT**.
@@ -996,7 +981,7 @@ Este proyecto está bajo la **Licencia MIT**.
 ```
 MIT License
 
-Copyright (c) 2025 [Tu Nombre]
+Copyright (c) 2025 [Ian Gorski]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1019,57 +1004,9 @@ SOFTWARE.
 
 ---
 
-## 🙏 Agradecimientos
-
-Este proyecto fue posible gracias a:
-
-- **[Vercel](https://vercel.com/)** por el increíble AI SDK y Next.js
-- **[OpenAI](https://openai.com/)** por los modelos de lenguaje GPT-4
-- **[Exa](https://exa.ai/)** por la API de búsqueda inteligente
-- **[TailwindCSS](https://tailwindcss.com/)** por el framework de CSS
-- **La comunidad de Next.js** por la documentación y recursos
-
----
-
 ## 📬 Contacto
 
-**Desarrollador**: [Tu Nombre]  
-**Email**: [tu-email@ejemplo.com]  
-**GitHub**: [@tu-usuario](https://github.com/tu-usuario)  
-**LinkedIn**: [Tu Perfil](https://linkedin.com/in/tu-perfil)  
-
----
-
-## 🎯 Notas Finales para Evaluación Laboral
-
-### **¿Por qué este proyecto demuestra habilidades técnicas?**
-
-1. **Arquitectura Moderna**: Implementa Next.js 15 con Server Components, Client Components y Server Actions
-2. **AI Integration**: Uso avanzado del Vercel AI SDK con streaming y generación estructurada
-3. **TypeScript Estricto**: Code base completamente tipado con interfaces bien definidas
-4. **Clean Code**: Código limpio, DRY, con servicios centralizados y separación de responsabilidades
-5. **Seguridad**: Manejo seguro de API keys, validación y sanitización de entrada
-6. **Performance**: Optimizaciones con streaming, Server Components y code splitting
-7. **Best Practices**: ESLint, comentarios JSDoc, manejo robusto de errores
-8. **UX**: Interfaz intuitiva con feedback visual y accesibilidad
-
-### **Tecnologías Clave Demostradas**
-
-- ✅ Next.js 15 (App Router, RSC, Server Actions)
-- ✅ React 19 (Hooks modernos, composición de componentes)
-- ✅ TypeScript (Tipado estricto, interfaces, generics)
-- ✅ Vercel AI SDK (Streaming, generateObject, integración OpenAI)
-- ✅ TailwindCSS (Utility-first, diseño responsive)
-- ✅ Arquitectura de microservicios (Servicios desacoplados)
-- ✅ APIs RESTful (HTTP methods, status codes, error handling)
-- ✅ Git & Version Control (Commits semánticos, .gitignore)
-
-### **Soft Skills Demostradas**
-
-- 📚 **Documentación exhaustiva**: README completo y profesional
-- 🏗️ **Planificación**: Arquitectura bien pensada y escalable
-- 🔍 **Atención al detalle**: Manejo de edge cases y errores
-- 🎨 **UX/UI**: Interfaz intuitiva y accesible
-- 🚀 **Proactividad**: Implementación de features avanzadas (streaming, vision, etc.)
-
----
+**Desarrollador**: [Ian Gorski]  
+**Email**: [gorskiandev@gmail.com]  
+**GitHub**: [@tu-usuario](https://github.com/IanGorski)  
+**LinkedIn**: [Tu Perfil](https://www.linkedin.com/in/ian-gorski/)
