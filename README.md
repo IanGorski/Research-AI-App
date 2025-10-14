@@ -502,7 +502,7 @@ research-ai-app/
 │   └── (imágenes, iconos, etc.)
 │
 ├── .env.example                      # Plantilla de variables de entorno
-├── .env.local                        # Variables de entorno (NO SUBIR A GIT)
+├── .env.local                        # Variables de entorno 
 ├── .gitignore                        # Archivos ignorados por Git
 ├── next.config.ts                    # Configuración de Next.js
 ├── tailwind.config.ts                # Configuración de TailwindCSS
@@ -510,8 +510,7 @@ research-ai-app/
 ├── package.json                      # Dependencias y scripts
 ├── postcss.config.mjs                # Configuración de PostCSS
 ├── eslint.config.mjs                 # Configuración de ESLint
-├── components.json                   # Configuración de shadcn/ui (si aplica)
-├── AUDITORIA_Y_REFACTORIZACION.md    # Reporte de auditoría técnica
+├── components.json                   # Configuración de shadcn/ui 
 └── README.md                         # Este archivo
 ```
 
