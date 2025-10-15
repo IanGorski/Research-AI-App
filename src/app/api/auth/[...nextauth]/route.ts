@@ -4,7 +4,7 @@ import GoogleProvider from "next-auth/providers/google";
 
 // Lista de emails autorizados - Solo estos usuarios podrán acceder
 const AUTHORIZED_EMAILS = [
-  "tu-email@gmail.com", // Reemplaza con tu email de Google
+  "gorskiandev@gmail.com", // Tu email de Google
   // Agrega más emails autorizados aquí
 ];
 
