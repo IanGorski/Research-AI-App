@@ -37,16 +37,24 @@ const ResearchPanel: React.FC<ResearchPanelProps> = ({ onResultSelected }) => {
                 body: JSON.stringify({ topic }),
             });
 
+            const data = await response.json();
+
             if (!response.ok) {
-                throw new Error('Error al realizar la investigación');
+                const errorMessage = data.error || 'Error al realizar la investigación';
+                const errorDetails = data.details ? ` Detalles: ${data.details}` : '';
+                throw new Error(errorMessage + errorDetails);
             }
 
-            const data = await response.json();
             const allResults = [...(data.worthExpanding || []), ...(data.notWorthExpanding || [])];
             setResults(allResults);
+            
+            if (allResults.length === 0) {
+                setError('No se encontraron resultados para este tema. Intenta con otro tema.');
+            }
         } catch (err) {
-            setError('Error al realizar la investigación. Por favor, intenta de nuevo.');
-            console.error(err);
+            const errorMessage = err instanceof Error ? err.message : 'Error desconocido';
+            setError(errorMessage);
+            console.error('[ResearchPanel] Error:', err);
         } finally {
             setLoading(false);
         }
