@@ -1007,7 +1007,7 @@ SOFTWARE.
 
 ## 📬 Contacto
 
-**Desarrollador**: [Ian Gorski]  
+**Desarrollador**: Ian Gorski  
 **Email**: gorskiandev@gmail.com  
 **GitHub**: https://github.com/IanGorski
 **LinkedIn**: https://www.linkedin.com/in/ian-gorski/
