@@ -2,10 +2,8 @@ import NextAuth from "next-auth";
 import type { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-// Lista de emails autorizados.
-const AUTHORIZED_EMAILS = [
-  "gorskiandev@gmail.com", 
-];
+// Lista de emails autorizados obtenida desde variables de entorno.
+const AUTHORIZED_EMAILS = (process.env.AUTHORIZED_EMAILS || "").split(",");
 
 export const authOptions: NextAuthOptions = {
   providers: [
