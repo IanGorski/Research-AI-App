@@ -46,6 +46,7 @@ export async function searchWithExa(topic: string): Promise<ExaSearchResult[]> {
 
   try {
     console.log('[Exa Service] Realizando búsqueda para:', topic);
+    console.log('[Exa Service] URL:', `${EXA_API_URL}/search`);
 
     const response = await axios.post<ExaApiResponse>(
       `${EXA_API_URL}/search`,
@@ -64,6 +65,7 @@ export async function searchWithExa(topic: string): Promise<ExaSearchResult[]> {
           'x-api-key': EXA_API_KEY,
           'Content-Type': 'application/json',
         },
+        timeout: 30000, // 30 segundos de timeout
       }
     );
 
@@ -71,6 +73,22 @@ export async function searchWithExa(topic: string): Promise<ExaSearchResult[]> {
     return response.data.results || [];
   } catch (error) {
     console.error('[Exa Service] Error al consultar la API:', error);
+    
+    if (axios.isAxiosError(error)) {
+      const status = error.response?.status;
+      const message = error.response?.data?.message || error.message;
+      
+      if (status === 401) {
+        throw new Error('API Key de Exa inválida o expirada');
+      } else if (status === 429) {
+        throw new Error('Límite de rate limit alcanzado en Exa API');
+      } else if (status === 500) {
+        throw new Error('Error interno del servidor de Exa API');
+      } else {
+        throw new Error(`Error de Exa API (${status}): ${message}`);
+      }
+    }
+    
     if (error instanceof Error) {
       throw new Error(`Error de Exa API: ${error.message}`);
     }
