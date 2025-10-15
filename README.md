@@ -1,5 +1,7 @@
 # 📰 Research AI App - Plataforma de Investigación y Generación de Contenido Periodístico
 
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000?style=flat-square&logo=vercel)](https://research-ai-app.vercel.app/)
+
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.5-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Vercel AI SDK](https://img.shields.io/badge/Vercel_AI_SDK-5.0.71-black?style=flat-square)](https://sdk.vercel.ai/)
