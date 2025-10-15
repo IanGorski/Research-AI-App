@@ -2,10 +2,9 @@ import NextAuth from "next-auth";
 import type { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-// Lista de emails autorizados - Solo estos usuarios podrán acceder
+// Lista de emails autorizados.
 const AUTHORIZED_EMAILS = [
-  "gorskiandev@gmail.com", // Tu email de Google
-  // Agrega más emails autorizados aquí
+  "gorskiandev@gmail.com", 
 ];
 
 export const authOptions: NextAuthOptions = {
