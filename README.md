@@ -982,7 +982,7 @@ Este proyecto está bajo la **Licencia MIT**.
 ```
 MIT License
 
-Copyright (c) 2025 [Ian Gorski]
+Copyright (c) 2025 Ian Gorski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1008,6 +1008,6 @@ SOFTWARE.
 ## 📬 Contacto
 
 **Desarrollador**: [Ian Gorski]  
-**Email**: [gorskiandev@gmail.com]  
-**GitHub**: [https://github.com/IanGorski]()  
-**LinkedIn**: [https://www.linkedin.com/in/ian-gorski/]
+**Email**: gorskiandev@gmail.com  
+**GitHub**: https://github.com/IanGorski
+**LinkedIn**: https://www.linkedin.com/in/ian-gorski/
