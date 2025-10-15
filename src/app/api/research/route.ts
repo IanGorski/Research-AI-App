@@ -1,6 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { searchAndCategorize, validateExaKey } from '@/services/exaApi';
 
+// Método GET para diagnóstico
+export async function GET() {
+  const hasExaKey = validateExaKey();
+  return NextResponse.json({
+    message: 'Endpoint de investigación con Exa API',
+    method: 'POST',
+    exaApiConfigured: hasExaKey,
+    exaApiUrl: process.env.EXA_API_URL || 'https://api.exa.ai',
+  });
+}
+
 export async function POST(request: NextRequest) {
   try {
     // Validar API Key
