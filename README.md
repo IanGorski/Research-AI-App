@@ -718,7 +718,7 @@ const sanitizedInput = sanitizeText(inputValue);
 ### **Alta Prioridad**
 
 #### 1. **Autenticación de Usuarios**
-- Implementar NextAuth.js o Clerk
+- Implementar NextAuth.js o Clerk (Realizado)
 - Perfiles de usuario
 - Historial de artículos generados por usuario
 
@@ -800,7 +800,7 @@ const sanitizedInput = sanitizeText(inputValue);
 
 #### 15. **CI/CD**
 - GitHub Actions para tests automáticos
-- Deploy automático a Vercel/Netlify
+- Deploy automático a Vercel/Netlify (Realizado)
 - Checks de calidad de código
 - Semantic versioning
 
@@ -1009,5 +1009,5 @@ SOFTWARE.
 
 **Desarrollador**: [Ian Gorski]  
 **Email**: [gorskiandev@gmail.com]  
-**GitHub**: [@tu-usuario](https://github.com/IanGorski)  
-**LinkedIn**: [Tu Perfil](https://www.linkedin.com/in/ian-gorski/)
+**GitHub**: [https://github.com/IanGorski]()  
+**LinkedIn**: [https://www.linkedin.com/in/ian-gorski/]
