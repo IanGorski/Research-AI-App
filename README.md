@@ -798,7 +798,6 @@ const sanitizedInput = sanitizeText(inputValue);
 
 #### 15. **CI/CD**
 - GitHub Actions para tests automáticos
-- Deploy automático a Vercel/Netlify
 - Checks de calidad de código
 - Semantic versioning
 
@@ -1007,5 +1006,5 @@ SOFTWARE.
 
 **Desarrollador**: [Ian Gorski]  
 **Email**: [gorskiandev@gmail.com]  
-**GitHub**: [@tu-usuario](https://github.com/IanGorski)  
-**LinkedIn**: [Tu Perfil](https://www.linkedin.com/in/ian-gorski/)
+**GitHub**: [https://github.com/IanGorski]( 
+**LinkedIn**: [https://www.linkedin.com/in/ian-gorski/]

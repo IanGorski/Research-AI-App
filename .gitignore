@@ -37,3 +37,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# config files
+CONFIGURACION_GOOGLE_AUTH.md
+INSTRUCCIONES.md
+AUTENTICACION.md
+CONFIGURACION_GOOGLE_AUTH.md
