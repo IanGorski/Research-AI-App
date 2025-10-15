@@ -74,24 +74,13 @@ export async function searchWithExa(topic: string): Promise<ExaSearchResult[]> {
   } catch (error) {
     console.error('[Exa Service] Error al consultar la API:', error);
     
+    // Verifica si el error es de Axios
     if (axios.isAxiosError(error)) {
       const status = error.response?.status;
       const message = error.response?.data?.message || error.message;
-      
-      if (status === 401) {
-        throw new Error('API Key de Exa inválida o expirada');
-      } else if (status === 429) {
-        throw new Error('Límite de rate limit alcanzado en Exa API');
-      } else if (status === 500) {
-        throw new Error('Error interno del servidor de Exa API');
-      } else {
-        throw new Error(`Error de Exa API (${status}): ${message}`);
-      }
+      throw new Error(`Error en la API de Exa: ${message} (status: ${status})`);
     }
-    
-    if (error instanceof Error) {
-      throw new Error(`Error de Exa API: ${error.message}`);
-    }
+
     throw new Error('Error desconocido al consultar Exa API');
   }
 }
