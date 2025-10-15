@@ -74,10 +74,11 @@ export async function searchWithExa(topic: string): Promise<ExaSearchResult[]> {
   } catch (error) {
     console.error('[Exa Service] Error al consultar la API:', error);
     
-    // Verifica si el error es de Axios
-    if (axios.isAxiosError(error)) {
-      const status = error.response?.status;
-      const message = error.response?.data?.message || error.message;
+    // Verifica si el error es de Axios (verificación alternativa compatible con TypeScript)
+    if (error && typeof error === 'object' && 'response' in error) {
+      const axiosError = error as { response?: { status?: number; data?: { message?: string } }; message?: string };
+      const status = axiosError.response?.status;
+      const message = axiosError.response?.data?.message || axiosError.message || 'Error desconocido';
       throw new Error(`Error en la API de Exa: ${message} (status: ${status})`);
     }
 
